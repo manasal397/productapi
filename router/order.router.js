@@ -73,7 +73,7 @@ let id = req.params.id;
   }
   return res.status(500).send({
    message: "Error updating note with id " + id
-  })'
+  });
  });
 });
 
