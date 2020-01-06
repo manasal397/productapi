@@ -13,7 +13,7 @@ address: { type: String },
 mobile: { type: String },
 orderinfo: { type: Array },
 orderstatus: { type: String },
-orderdate: { type: Date }
+orderdate: { type: String }
 },
 {
 collection: 'order'
