@@ -45,6 +45,18 @@ orderRoute.route('/:username').get(function(req, res) {
   });
 });
 
+orderRoute.route('/:mobile').get(function(req, res) {
+  let mobile = req.params.username;
+  Order.find({ username: mobile }, function(err, data) {
+    if (err) {
+      throw err;
+    }
+    else {
+      res.json(data);
+    }
+  });
+});
+
 orderRoute.route('/:id').patch(function(req, res) {
 let id = req.params.id;
  // validate request
