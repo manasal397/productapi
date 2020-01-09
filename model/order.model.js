@@ -12,7 +12,7 @@ username: { type: String },
 address: { type: String },
 mobile: { type: String },
 orderinfo: { type: Array },
-  total: { type: String },
+total: { type: Number },
 orderstatus: { type: String },
 orderdate: { type: String }
 },
