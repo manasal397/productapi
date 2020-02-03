@@ -59,6 +59,7 @@ proRoute.route('/:id').patch(function (req, res) {
       data.price = req.body.price;
       data.gst = req.body.gst;
       data.description = req.body.description;
+      data.category = req.body.category;
 
       data.save().then(obj => {
         res.status(200).json({ message: 'Updated product details successfully' });
