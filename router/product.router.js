@@ -70,7 +70,7 @@ proRoute.route('/:id').patch(function (req, res) {
   });
 });
 
-proRoute.route(':/id').delete(function (req, res) {
+proRoute.route('/:id').delete(function (req, res) {
   let id = req.params.id;
 
   Pro.findByIdAndDelete({ _id: id }, function (err, data) {
